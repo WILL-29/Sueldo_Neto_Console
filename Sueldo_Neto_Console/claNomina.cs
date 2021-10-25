@@ -24,6 +24,11 @@ namespace Sueldo_Neto_Console
         {
             Double Total_Desc;
             Total_Desc = sb - (sb * 0.9713);
+            if (Total_Desc >= 7738.67)
+            {
+                Total_Desc = 7738.67;
+                return Total_Desc;
+            }
             return Total_Desc;
         }
         public static double DescISR(double sb)
