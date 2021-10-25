@@ -1,0 +1,7 @@
+C:\Users\consultor38\Desktop\Sunshine\Sueldo_Neto_Console\Sueldo_Neto_Console\bin\Debug\Sueldo_Neto_Console.exe.config
+C:\Users\consultor38\Desktop\Sunshine\Sueldo_Neto_Console\Sueldo_Neto_Console\bin\Debug\Sueldo_Neto_Console.exe
+C:\Users\consultor38\Desktop\Sunshine\Sueldo_Neto_Console\Sueldo_Neto_Console\bin\Debug\Sueldo_Neto_Console.pdb
+C:\Users\consultor38\Desktop\Sunshine\Sueldo_Neto_Console\Sueldo_Neto_Console\obj\Debug\Sueldo_Neto_Console.csprojAssemblyReference.cache
+C:\Users\consultor38\Desktop\Sunshine\Sueldo_Neto_Console\Sueldo_Neto_Console\obj\Debug\Sueldo_Neto_Console.csproj.CoreCompileInputs.cache
+C:\Users\consultor38\Desktop\Sunshine\Sueldo_Neto_Console\Sueldo_Neto_Console\obj\Debug\Sueldo_Neto_Console.exe
+C:\Users\consultor38\Desktop\Sunshine\Sueldo_Neto_Console\Sueldo_Neto_Console\obj\Debug\Sueldo_Neto_Console.pdb
