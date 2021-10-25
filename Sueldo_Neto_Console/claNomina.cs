@@ -13,6 +13,11 @@ namespace Sueldo_Neto_Console
             //Esto en realidad se llama SFS, Seguro Familiar de Salud
             double Total_Desc;
             Total_Desc = sb - (sb * 0.9696);
+            if (Total_Desc >= 4098.53)
+            {
+                Total_Desc = 4098.53;
+                return Total_Desc;
+            }
             return Total_Desc;
         }
         public static double DescAFP(double sb)
@@ -25,14 +30,24 @@ namespace Sueldo_Neto_Console
         {
             double Total_Desc, Rest;
             Rest = sb - DescAFP(sb) - DescARS(sb);
-            if (Rest > 34685.0 && Rest < 52027.42)
+            if (Rest <= 34685.0 )
+            {
+                return 0;
+            }
+            else if (Rest > 34685.0 && Rest < 52027.42)
             {
                 Total_Desc = ((Rest - 34685) * 15) / 100;
                 return Total_Desc;
             }
+            else if (Rest > 52027.42 && Rest < 72260.25)
+            {
+                Total_Desc = 2601.33 + ((Rest - 52027.42) * 0.20);
+                return Total_Desc;
+            }
             else
             {
-                return 9;
+                Total_Desc = 6648 + ((Rest - 72260.25) * 0.25);
+                return Total_Desc;
             }
 
         }
