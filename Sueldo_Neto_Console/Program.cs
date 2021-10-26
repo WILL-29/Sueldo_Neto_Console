@@ -6,17 +6,19 @@ using System.Threading.Tasks;
 
 namespace Sueldo_Neto_Console
 {
-    class Program : claNomina
+    class Program
     {
         static void Main(string[] args)
         {
-            Double sb;
-            sb = 175000;
-            Console.WriteLine($"De Seguro de salud:   {Convert.ToString(claNomina.DescARS(sb))}");
-            Console.WriteLine($"De AFP se descontará: {Convert.ToString(claNomina.DescAFP(sb))}");
-            Console.WriteLine($"De ISR:               {Convert.ToString(claNomina.DescISR(sb))}");
+            Console.Write("Digite su sueldo: ");
+            double sb = Convert.ToDouble(Console.ReadLine());            
+            Console.WriteLine($"De Seguro de salud:   {(claNomina.DescARS(sb)).ToString("N2")}");
+            Console.WriteLine($"De AFP se descontará: {(claNomina.DescAFP(sb)).ToString("N2")}");
+            Console.WriteLine($"De ISR:               {(claNomina.DescISR(sb)).ToString("N2")}");
+            Console.WriteLine("Total a descontar:    " + (claNomina.DescAFP(sb) + claNomina.DescAFP(sb) + claNomina.DescISR(sb)).ToString("N2"));
+            Console.WriteLine("El Sueldo Neto es:    " + (sb - (claNomina.DescAFP(sb) + claNomina.DescAFP(sb) + claNomina.DescISR(sb))).ToString("N2"));
+            Console.WriteLine();
             Console.ReadKey();
-
         }
     }
 }
