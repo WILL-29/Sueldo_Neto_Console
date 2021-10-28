@@ -15,8 +15,8 @@ namespace Sueldo_Neto_Console
             Console.WriteLine($"De Seguro de salud:   {(claNomina.DescARS(sb)).ToString("N2")}");
             Console.WriteLine($"De AFP se descontará: {(claNomina.DescAFP(sb)).ToString("N2")}");
             Console.WriteLine($"De ISR:               {(claNomina.DescISR(sb)).ToString("N2")}");
-            Console.WriteLine("Total a descontar:    " + (claNomina.DescAFP(sb) + claNomina.DescAFP(sb) + claNomina.DescISR(sb)).ToString("N2"));
-            Console.WriteLine("El Sueldo Neto es:    " + (sb - (claNomina.DescAFP(sb) + claNomina.DescAFP(sb) + claNomina.DescISR(sb))).ToString("N2"));
+            Console.WriteLine("Total a descontar:    " + (claNomina.DescARS(sb) + claNomina.DescAFP(sb) + claNomina.DescISR(sb)).ToString("N2"));
+            Console.WriteLine("El Sueldo Neto es:    " + (sb - (claNomina.DescAFP(sb) + claNomina.DescARS(sb) + claNomina.DescISR(sb))).ToString("N2"));
             Console.WriteLine();
             Console.ReadKey();
         }
